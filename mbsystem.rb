@@ -57,7 +57,7 @@ class Mbsystem < Formula
 
       The GMT_CUSTOM_LIBS needs to be set for all users
       on this computer that want to use mbsystem:
-        "echo 'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf"
+        echo 'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf
 
     EOS
   end
