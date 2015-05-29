@@ -48,8 +48,8 @@ class Mbsystem < Formula
     system "./configure", *args
     system "make", "check" if build.with? "check"
     system "make", "install"
-    
-    system "echo 'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf"
+
+    system "echo", "'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf"
   end
 
   def caveats
