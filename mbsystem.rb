@@ -1,8 +1,8 @@
 class Mbsystem < Formula
   homepage "http://www.mbari.org/data/mbsystem/index.html"
-  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2247.tar.gz"
-  version "5.5.2247"
-  sha256 "3a11f4a8c660b0e1cf85f731742bfc7e4b91757ebd4b063bb5c2a92619c89954"
+  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2248.tar.gz"
+  version "5.5.2248"
+  sha256 "7cf143a61d8c2fa3c76d5209a0acfdcc9f4f4cc5e68914cb208f561b77bf70c8"
 
   depends_on :x11
   depends_on "gmt"
@@ -49,16 +49,15 @@ class Mbsystem < Formula
     system "./configure", *args
     system "make", "check" if build.with? "check"
     system "make", "install"
-
-    system "echo", "'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf"
   end
 
   def caveats
     <<-EOS.undent
 
       The GMT_CUSTOM_LIBS needs to be set for all users
-      on this computer that want to use mbsystem:
-        echo 'GMT_CUSTOM_LIBS = #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib' >> ~/gmt.conf
+      on this computer that want to use mbsystem. Run the
+      following command within the home directory:
+          gmtset GMT_CUSTOM_LIBS #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib
 
     EOS
   end
