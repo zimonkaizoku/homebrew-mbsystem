@@ -41,8 +41,10 @@ class Mbsystem < Formula
       "--with-proj-lib=#{Formula["proj"].opt_lib}",
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
       "--with-fftw-lib=#{Formula["fftw"].opt_lib}",
-      "--with-motif-include=#{Formula["openmotif"].opt_include}",
-      "--with-motif-lib=#{Formula["openmotif"].opt_lib}"
+      "--with-motif-include=#{Formula["lesstif"].opt_include}",
+      "--with-motif-lib=#{Formula["lesstif"].opt_lib}"      
+      # "--with-motif-include=#{Formula["openmotif"].opt_include}",
+      # "--with-motif-lib=#{Formula["openmotif"].opt_lib}"
     ]
     args << "--with-otps-dir=#{Formula["otps"].prefix}" if build.with? "otps"
 
