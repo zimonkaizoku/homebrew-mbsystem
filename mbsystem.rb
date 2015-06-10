@@ -9,7 +9,8 @@ class Mbsystem < Formula
   depends_on "proj"
   depends_on "fftw"
   depends_on "homebrew/x11/gv"
-  depends_on "zimonkaizoku/mbsystem/openmotif"
+  depends_on "lesstif"
+  # depends_on "zimonkaizoku/mbsystem/openmotif"
   depends_on "zimonkaizoku/mbsystem/otps" => :recommended
 
   option "without-levitus", "Don't install Levitus database (no mblevitus)"
