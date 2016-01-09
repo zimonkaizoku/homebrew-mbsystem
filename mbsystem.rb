@@ -49,6 +49,7 @@ class Mbsystem < Formula
       #"--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       #"--with-motif-include=#{Formula["openmotif"].opt_include}"
 
+      # Ignore this, it's for later:
       #"--with-netcdf-config=#{Formula["netcdf"].opt_lib}/pkgconfig/netcdf.pc"
       #"--with-gdal-config=#{Formula["gdal"].opt_include}/cpl_config.h"
       #"--with-gmt-config=#{Formula["gmt"].opt_include}/gmt/config.h"
