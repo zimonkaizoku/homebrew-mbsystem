@@ -14,32 +14,16 @@ class Mbsystem < Formula
   #depends_on "zimonkaizoku/mbsystem/openmotif"
   depends_on "zimonkaizoku/mbsystem/otps" => :recommended
 
-  option "without-levitus", "Don't install Levitus database (no mblevitus)"
   option "without-check", "Disable build time checks (not recommended)"
 
-  resource "levitus" do
-    url "ftp://ftp.ldeo.columbia.edu/pub/MB-System/annual.gz"
-    sha256 "0b57ce813259843ca0b141e2a34a001bc5ebb53b24020a891d0715b9282ebeac"
-  end
-
   def install
-    if build.with? "levitus"
-      resource("levitus").stage do
-        mkdir_p "#{share}/mbsystem"
-        ln_s "annual", "#{share}/mbsystem/LevitusAnnual82.dat"
-      end
-    end
-
     args = [
       "--prefix=#{prefix}",
       "--disable-static",
       "--enable-shared",
-      "--with-netcdf-lib=#{Formula["netcdf"].opt_lib}",
-      "--with-netcdf-include=#{Formula["netcdf"].opt_include}",
-      "--with-gdal-lib=#{Formula["gdal"].opt_lib}",
-      "--with-gdal-include=#{Formula["gdal"].opt_include}",
-      "--with-gmt-lib=#{Formula["gmt"].opt_lib}",
-      "--with-gmt-include=#{Formula["gmt"].opt_include}/gmt",
+      "--with-netcdf-config=#{Formula["netcdf"].opt_bin}",
+      "--with-gdal-config=#{Formula["gdal"].opt_bin}",
+      "--with-gmt-config=#{Formula["gmt"].opt_bin}",
       "--with-proj-lib=#{Formula["proj"].opt_lib}",
       "--with-proj-include=#{Formula["proj"].opt_include}",
       "--with-fftw-lib=#{Formula["fftw"].opt_lib}",
@@ -48,12 +32,6 @@ class Mbsystem < Formula
       "--with-motif-include=#{Formula["lesstif"].opt_include}"
       #"--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       #"--with-motif-include=#{Formula["openmotif"].opt_include}"
-
-      # Ignore this, it's for later:
-      #"--with-netcdf-config=#{Formula["netcdf"].opt_lib}/pkgconfig/netcdf.pc"
-      #"--with-gdal-config=#{Formula["gdal"].opt_include}/cpl_config.h"
-      #"--with-gmt-config=#{Formula["gmt"].opt_include}/gmt/config.h"
-
     ]
     args << "--with-otps-dir=#{Formula["otps"].prefix}" if build.with? "otps"
 
