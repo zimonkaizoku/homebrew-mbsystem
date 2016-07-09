@@ -1,7 +1,7 @@
 class Mbsystem < Formula
   homepage "http://www.mbari.org/data/mbsystem/index.html"
-  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2270.tar.gz"
-  sha256 "42ccd82b81d7d67d32cdc25adcd5e0135e544d6b510e7bbad0b1e892edc78039"
+  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2279.tar.gz"
+  sha256 "50b0013af2bb2d66d8278057f64ea3d3be931d23e6fb7aa0af207285b27c00f2"
 
   depends_on :x11
   depends_on "gmt"
