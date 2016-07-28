@@ -1,7 +1,7 @@
 class Otps < Formula
   homepage "http://volkov.oce.orst.edu/tides/tpxo8_atlas.html"
   url "ftp://anonymous:anonymous%40homebrew.com@ftp.oce.orst.edu/dist/tides/OTPS2.tar.Z"
-  sha256 "c3e15679515e6e358d173eb9b46276c51ceb5bcd80ecb50822030e1d2900c361"
+  sha256 "5ac90789e4765da9efeeb2823ac713b12b30c0ad1e8d8b10514f591137f56329"
 
   depends_on :fortran
 
