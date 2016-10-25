@@ -1,7 +1,7 @@
 class Mbsystem < Formula
   homepage "http://www.mbari.org/data/mbsystem/index.html"
-  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2279.tar.gz"
-  sha256 "50b0013af2bb2d66d8278057f64ea3d3be931d23e6fb7aa0af207285b27c00f2"
+  url "ftp://ftp.ldeo.columbia.edu/pub/mbsystem/mbsystem-5.5.2284.tar.gz"
+  sha256 "62afc8bf4313720af48caa0c11d7596c4fce263420653fce90b600e99c23e709"
 
   depends_on :x11
   depends_on "gmt"
@@ -48,7 +48,7 @@ class Mbsystem < Formula
       The GMT_CUSTOM_LIBS needs to be set for all users
       on this computer that want to use mbsystem. Run the
       following command within the home directory:
-          gmtset GMT_CUSTOM_LIBS #{HOMEBREW_PREFIX}/lib/libmbgmt.dylib
+          gmtset GMT_CUSTOM_LIBS #{HOMEBREW_PREFIX}/lib/mbsystem.so
 
       Additionally, if not already done within the gmt
       installation, the directories for DCW and GSHHG (borders,
