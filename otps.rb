@@ -47,5 +47,6 @@ class Otps < Formula
 
   test do
     system "#{prefix}/extract_HC<setup.inp"
+    assert File.exist? "#{prefix}/sample.out"
   end
 end
