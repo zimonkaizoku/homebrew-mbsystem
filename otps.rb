@@ -1,6 +1,6 @@
 class Otps < Formula
   desc "OTPS: OSU Tidal Prediction Software"
-  homepage "http://volkov.oce.orst.edu/tides/tpxo8_atlas.html"
+  homepage "http://volkov.oce.orst.edu/tides/otps.html"
   url "ftp://anonymous:anonymous%40homebrew.com@ftp.oce.orst.edu/dist/tides/OTPS2.tar.Z"
   sha256 "5ac90789e4765da9efeeb2823ac713b12b30c0ad1e8d8b10514f591137f56329"
 
