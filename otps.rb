@@ -2,7 +2,6 @@ class Otps < Formula
   desc "OTPS: OSU Tidal Prediction Software"
   homepage "http://volkov.oce.orst.edu/tides/tpxo8_atlas.html"
   url "ftp://anonymous:anonymous%40homebrew.com@ftp.oce.orst.edu/dist/tides/OTPS2.tar.Z"
-  version "2"
   sha256 "5ac90789e4765da9efeeb2823ac713b12b30c0ad1e8d8b10514f591137f56329"
 
   option "with-tpxo8", "Install TPXO8-atlas-compact tide model"
@@ -45,7 +44,7 @@ class Otps < Formula
 
     EOS
   end
-  
+
   test do
     system "#{prefix}/extract_HC<setup.inp"
   end
