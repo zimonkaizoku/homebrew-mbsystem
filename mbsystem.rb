@@ -9,7 +9,7 @@ class Mbsystem < Formula
   depends_on "netcdf"
   depends_on "proj"
   depends_on "fftw"
-  depends_on "homebrew/x11/gv"
+  depends_on "gv"
   #depends_on "lesstif"
   depends_on "openmotif"
   depends_on "zimonkaizoku/mbsystem/otps" => :recommended
