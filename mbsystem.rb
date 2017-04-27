@@ -11,7 +11,6 @@ class Mbsystem < Formula
   depends_on "proj"
   depends_on "fftw"
   depends_on "gv"
-  #depends_on "lesstif"
   depends_on "openmotif"
   depends_on "zimonkaizoku/mbsystem/otps"
 
@@ -22,15 +21,10 @@ class Mbsystem < Formula
       "--prefix=#{prefix}",
       "--disable-static",
       "--enable-shared",
-      #"--with-netcdf-config=#{Formula["netcdf"].opt_bin}",
-      #"--with-gdal-config=#{Formula["gdal"].opt_bin}",
-      #"--with-gmt-config=#{Formula["gmt"].opt_bin}",
       "--with-proj-lib=#{Formula["proj"].opt_lib}",
       "--with-proj-include=#{Formula["proj"].opt_include}",
       "--with-fftw-lib=#{Formula["fftw"].opt_lib}",
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
-      #"--with-motif-lib=#{Formula["lesstif"].opt_lib}",
-      #"--with-motif-include=#{Formula["lesstif"].opt_include}"
       "--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       "--with-motif-include=#{Formula["openmotif"].opt_include}"
     ]
