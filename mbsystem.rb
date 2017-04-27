@@ -13,7 +13,7 @@ class Mbsystem < Formula
   depends_on "gv"
   #depends_on "lesstif"
   depends_on "openmotif"
-  depends_on "zimonkaizoku/mbsystem/otps" => :recommended
+  depends_on "zimonkaizoku/mbsystem/otps"
 
   option "without-check", "Disable build time checks (not recommended)"
 
