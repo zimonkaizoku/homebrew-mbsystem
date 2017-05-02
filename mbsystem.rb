@@ -1,8 +1,8 @@
 class Mbsystem < Formula
   desc "MB-System seafloor mapping software"
   homepage "http://www.mbari.org/products/research-software/mb-system/"
-  url "ftp://mbsystemftp@ftp.mbari.org/mbsystem-5.5.2302.tar.gz"
-  sha256 "e09043f71fb1a7bb00e0fb2dec699ee92872b6c1701ce2247f6acd5f271bfe47"
+  url "ftp://mbsystemftp@ftp.mbari.org/mbsystem-5.5.2303.tar.gz"
+  sha256 "380b5d242219f3a56b3ee57c05f38acac058eb1a2da6ce335de44014ff3ba8d7"
 
   depends_on :x11
   depends_on "gmt"
