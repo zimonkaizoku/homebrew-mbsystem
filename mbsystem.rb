@@ -1,8 +1,8 @@
 class Mbsystem < Formula
   desc "MB-System seafloor mapping software"
   homepage "http://www.mbari.org/products/research-software/mb-system/"
-  url "ftp://mbsystemftp@ftp.mbari.org/mbsystem-5.5.2303.tar.gz"
-  sha256 "380b5d242219f3a56b3ee57c05f38acac058eb1a2da6ce335de44014ff3ba8d7"
+  url "ftp://mbsystemftp@ftp.mbari.org/mbsystem-5.5.2306.tar.gz"
+  sha256 "e843717d8fc330c7f8d39ccbc550a4697ca9d8a7b99172555557e092094fa843"
 
   depends_on :x11
   depends_on "gmt"
@@ -12,7 +12,7 @@ class Mbsystem < Formula
   depends_on "fftw"
   depends_on "gv"
   depends_on "openmotif"
-  depends_on "zimonkaizoku/mbsystem/otps"
+  depends_on "dwcaress/mbsystem/otps"
 
   option "without-check", "Disable build time checks (not recommended)"
 
