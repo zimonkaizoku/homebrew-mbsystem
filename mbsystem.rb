@@ -27,7 +27,7 @@ class Mbsystem < Formula
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
       "--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       "--with-motif-include=#{Formula["openmotif"].opt_include}",
-      "--with-otps-dir=#{Formula["otps"].prefix}"
+      "--with-otps-dir=#{Formula["dwcaress/mbsystem/otps"].prefix}"
     ]
 
     ENV['CFLAGS']="-I/opt/X11/include -L/opt/X11/lib"
