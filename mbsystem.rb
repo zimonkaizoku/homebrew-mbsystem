@@ -26,7 +26,7 @@ class Mbsystem < Formula
       "--with-fftw-lib=#{Formula["fftw"].opt_lib}",
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
       "--with-motif-lib=#{Formula["openmotif"].opt_lib}",
-      "--with-motif-include=#{Formula["openmotif"].opt_include}"
+      "--with-motif-include=#{Formula["openmotif"].opt_include}",
       "--with-otps-dir=#{Formula["otps"].prefix}"
     ]
 
