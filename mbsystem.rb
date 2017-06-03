@@ -27,8 +27,8 @@ class Mbsystem < Formula
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
       "--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       "--with-motif-include=#{Formula["openmotif"].opt_include}"
+      "--with-otps-dir=#{Formula["otps"].prefix}"
     ]
-    args << "--with-otps-dir=#{Formula["otps"].prefix}" if build.with? "otps"
 
     ENV['CFLAGS']="-I/opt/X11/include -L/opt/X11/lib"
 
