@@ -1,18 +1,20 @@
 # homebrew-mbsystem
 ##Homebrew tap for MB-System
 
-MB-System goes through numerous updates. To account for these updates I created this Homebrew tap to avoid constantly bothering the `homebrew-science` guys. Additionally this tap includes a dependency that is not yet present in the Homebrew repo.
-That is `OTPS`, a tide prediction program that is used by the MB-System module `mbotps`.
+MB-System is an open source software package for the processing and display of seafloor mapping data, particularly swath mapping sonar data. The MB-System is documented and distributed from:
 
+http://www.mbari.org/products/research-software/mb-system/
+
+The MB-System project is maintaining this separate tap because MB-System is frequently updated and has one dependency, OTPS (tidal prediction software), that is not available through the normal homebrew repositories (`homebrew-core` and `homebrew-science`). 
 
 ##Install:
 
-`brew install zimonkaizoku/mbsystem/otps --with-tpxo8`
+`brew install dwcaress/mbsystem/otps --with-tpxo8`
 
-`brew install zimonkaizoku/mbsystem/mbsystem`
+`brew install dwcaress/mbsystem/mbsystem`
 
-You can also install MB-System directly, but this will install OTPS without a tide model and you need to add your own. Or you can install MB-System `--without-otps` if tide preditiction is not needed.
+You can also install MB-System directly, but this will install OTPS without a tide model and you need to add your own. Or you can install MB-System `--without-otps` if tide prediction is not needed.
 
-The usual way of using `brew tap zimonkaizoku/mbsystem` and then `brew install mbsystem`unfortunately conflicts with `homebrew-science`.
+There is a usual way of using `brew tap dwcaress/mbsystem` and then `brew install mbsystem`unfortunately conflicts with `homebrew-science`.
 
 Please read the Caveats carefully!
