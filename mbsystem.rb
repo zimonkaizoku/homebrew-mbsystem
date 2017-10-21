@@ -13,6 +13,8 @@ class Mbsystem < Formula
   depends_on "gv"
   depends_on "openmotif"
   depends_on "dwcaress/mbsystem/otps"
+  
+  conflicts_with "mbsystem-beta", :because => "mbsystem and mbsystem-beta share the same commands“
 
   option "without-check", "Disable build time checks (not recommended)"
 
