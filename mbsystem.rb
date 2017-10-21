@@ -12,7 +12,7 @@ class Mbsystem < Formula
   depends_on "fftw"
   depends_on "gv"
   depends_on "openmotif"
-  depends_on "zimonkaizoku/mbsystem/otps"
+  depends_on "dwcaress/mbsystem/otps"
 
   option "without-check", "Disable build time checks (not recommended)"
 
@@ -27,7 +27,7 @@ class Mbsystem < Formula
       "--with-fftw-include=#{Formula["fftw"].opt_include}",
       "--with-motif-lib=#{Formula["openmotif"].opt_lib}",
       "--with-motif-include=#{Formula["openmotif"].opt_include}",
-      "--with-otps-dir=#{Formula["zimonkaizoku/mbsystem/otps"].prefix}"
+      "--with-otps-dir=#{Formula["dwcaress/mbsystem/otps"].prefix}"
     ]
 
     ENV['CFLAGS']="-I/opt/X11/include -L/opt/X11/lib"
