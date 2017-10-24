@@ -1,4 +1,4 @@
-class Mbsystem < Formula
+class MbsystemBeta < Formula
   desc "MB-System seafloor mapping software (Homebrew formula for test distributions)"
   homepage "http://www.mbari.org/products/research-software/mb-system/"
   url "ftp://mbsystemftp@ftp.mbari.org/mbsystem-5.5.2320.tar.gz"
