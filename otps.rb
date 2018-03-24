@@ -6,7 +6,7 @@ class Otps < Formula
 
   option "with-tpxo8", "Install TPXO8-atlas-compact tide model"
 
-  depends_on :fortran
+  depends_on :gcc
 
   resource "tpxo8" do
     url "ftp://anonymous:anonymous%40homebrew.com@ftp.oce.orst.edu/dist/tides/TPXO8_compact/tpxo8_atlas_compact_v1.tar.Z"
